@@ -5,6 +5,7 @@ package Gaidar;
  */
 public class Main {
     public static void main(String[] args) {
-        Neo neo=new Neo();
+        Neo neo=new Neo(5);
+        neo = new Neo(neo);
     }
 }

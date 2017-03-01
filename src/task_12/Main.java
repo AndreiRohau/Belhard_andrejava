@@ -18,7 +18,14 @@ public class Main {
         Branch bananaTree = new Branch();
         bananaTree.getFruitCount();
         System.out.println(bananaTree.getFruitCount());
-        System.out.println(bananaTree.getBranch());
+        System.out.println(bananaTree.getNum());
+        Branch [] trunk = bananaTree.getBranch();
+        trunk[0] = new Branch();
+        long s = trunk[0].getFruitCount();
+        int k = trunk[0].getNum();
+        System.out.println(s);
+        System.out.println(k);
+
 
     }
 }
