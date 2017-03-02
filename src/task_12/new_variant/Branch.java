@@ -50,22 +50,16 @@ public class Branch {
     }
 
     //подсчет всех фруктов
-//    public int monkey() {
-//        int result;
-//        if (this.branches.length > 0) {
-//            result = getFruit();
-//            for (int i = 0; i < branches.length; i++) {
-//                result = result + this.branches[i].getFruit();
-//                this.branches[i].monkey();
-//
-//            }
-//            return result;
-//        } else {
-//            result = getFruit();
-//            return result;
-//        }
-//        return result;
-//    }
+    public int monkey() {
+        int result;
+        result = getFruit();
+        if (this.branches.length > 0) {
+            for (int i = 0; i < branches.length; i++) {
+                result = result + this.branches[i].monkey();
+            }
+        }
+        return result;
+    }
 
 
     public int getFruit() {
