@@ -16,6 +16,15 @@ public class Utill {
         return n;
     }
 
+    /** пример применения
+    Scanner sc = Utill.scan();
+        if (sc.hasNextInt()) {
+        fruit = sc.nextInt();
+    } else {
+        fruit = (int) (Math.random() * 10);
+    }
+    */
+
     public static void message(String string){
         System.out.println(string);
     }
