@@ -1,4 +1,4 @@
-package task_12.first_attempt;
+package task_12;
 
 /**
  * Есть 2 дерева, на одном растут бананы, на другом - кокосы.
@@ -15,16 +15,10 @@ package task_12.first_attempt;
 
 public class Main {
     public static void main(String[] args) {
-        Branch bananaTree = new Branch();
-        bananaTree.getFruitCount();
-        System.out.println(bananaTree.getFruitCount());
-        System.out.println(bananaTree.getNum());
-        Branch [] trunk = bananaTree.getBranch();
-        trunk[0] = new Branch();
-        long s = trunk[0].getFruitCount();
-        int k = trunk[0].getNum();
-        System.out.println(s);
-        System.out.println(k);
+        //создаем дерево
+        Branch cocoTree = new Branch();
+        System.out.println(cocoTree.getFruit());
+        Utill.message("Фруктов на дереве " + String.valueOf((cocoTree.monkey())));
 
 
     }

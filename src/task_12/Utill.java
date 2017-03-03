@@ -1,4 +1,4 @@
-package task_12.new_variant;
+package task_12;
 
 import java.util.Scanner;
 
@@ -6,13 +6,14 @@ import java.util.Scanner;
  * Created by Admin on 02.03.2017.
  */
 public class Utill {
-    private static String scanPut;
+    private static String scanPutString;
     private static String message;
+    private static Integer scanPutInt;
 
-    public static String scan(){
-        Scanner scan = new Scanner(System.in);
-        scanPut = String.valueOf((scan.nextInt()));
-        return scanPut;
+    public static Scanner scan() {
+        Scanner sc = new Scanner(System.in);
+        Scanner n = sc;
+        return n;
     }
 
     public static void message(String string){
