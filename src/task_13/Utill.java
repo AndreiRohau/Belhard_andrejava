@@ -1,4 +1,4 @@
-package task_12;
+package task_13;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Utill {
 
-    public static Scanner scanPut() {
+    public Scanner scanPut() {
         Scanner sc = new Scanner(System.in);
         return sc;
     }
@@ -21,7 +21,7 @@ public class Utill {
      }
     */
 
-    public static void message(String string){
+    public static void msg (String string){
         System.out.println(string);
     }
 }

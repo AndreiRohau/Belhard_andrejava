@@ -21,7 +21,7 @@ public class Branch {
         System.out.print("Сколько фруктов на этой ветке? (Введи число фруктов и нажмите ввод, ");
         System.out.println("ввод иных значений задаст случайное количество фруктов. ");
 
-        Scanner sc = Utill.scan();
+        Scanner sc = Utill.scanPut();
         if (sc.hasNextInt()) {
             fruit = sc.nextInt();
         } else {
@@ -34,7 +34,7 @@ public class Branch {
     public int setBranches() {
         System.out.println("Сколько веток будет на нашей ветке? (Введи число и нажмите ввод, " +
                 "ввод иных значений задаст случайное количество веток. ");
-        Scanner sc = Utill.scan();
+        Scanner sc = Utill.scanPut();
         if (sc.hasNextInt()) {
             num = sc.nextInt();
         } else {

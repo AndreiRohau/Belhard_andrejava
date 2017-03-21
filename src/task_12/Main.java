@@ -17,9 +17,9 @@ public class Main {
     public static void main(String[] args) {
         //создаем дерево
         Branch cocoTree = new Branch();
+        //выводим количество фруктов на стволе
         System.out.println(cocoTree.getFruit());
-        Utill.message("Фруктов на дереве " + String.valueOf((cocoTree.monkey())));
-
+        Utill.message("Фруктов на дереве " + String.valueOf(cocoTree.monkey()));
 
     }
 }
