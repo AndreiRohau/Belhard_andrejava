@@ -1,9 +1,15 @@
 package TASKs_DONE.task_6;
 
+import els3.logging_research.first.Someclass;
+
+import java.util.logging.Logger;
+
 /**
  * Created by Admin on 16.02.2017.
  */
 public class Snake {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
+
     public int[][] snake(int number) {
         //setting the number
 //        Scanner scanner = new Scanner(System.in);
@@ -62,13 +68,6 @@ public class Snake {
         }
     }
 
-    public static void showStatic() {
-        System.out.println("Статический метод");
-    }
-
-    public void nonStatic() {
-        System.out.println("HE cтатический метод");
-    }
 
 
 }

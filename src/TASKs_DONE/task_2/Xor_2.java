@@ -2,21 +2,25 @@ package TASKs_DONE.task_2;
 
 //есть 2 int переменные. Поменять их значения местами с помощью доп. переменной, операции xor
 
+import els3.logging_research.first.Someclass;
+
 import java.util.Scanner; // импортируем класс
+import java.util.logging.Logger;
 
 public class Xor_2 {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
 
     public static void xor_2() {
-        System.out.println("Enter two numbers below:");
+        log.info("Enter two numbers below:");
         Scanner sc = new Scanner(System.in);                    //input of two numbers
         int a = sc.nextInt();                                   //number one
         int b = sc.nextInt();                                   //number two
 
-        System.out.println("a = " + a + ", b = " + b);
+        log.info("a = " + a + ", b = " + b);
         a = a-b;
         b = b+a;
         a = b-a;
-        System.out.println("a = " + a + ", b = " + b);
+        log.info("a = " + a + ", b = " + b);
 
     }
 

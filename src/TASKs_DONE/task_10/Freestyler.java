@@ -1,9 +1,14 @@
 package TASKs_DONE.task_10;
 
+import els3.logging_research.first.Someclass;
+
+import java.util.logging.Logger;
+
 /**
  * Created by Admin on 22.02.2017.
  */
 public class Freestyler extends Sportsman {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
 
     private int amountOfShows;
 
@@ -25,7 +30,7 @@ public class Freestyler extends Sportsman {
 
     @Override
     public void start () {
-        System.out.print("_Freestyle_");
+        log.info("_Freestyle_");
     }
 
 }

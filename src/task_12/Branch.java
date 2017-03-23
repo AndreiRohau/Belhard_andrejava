@@ -1,11 +1,15 @@
 package task_12;
 
+import els3.logging_research.first.Someclass;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 /**
  * Created by Admin on 02.03.2017.
  */
 public class Branch {
+    private static final Logger log = Logger.getLogger(Branch.class.getName());
     private int fruit;
     private int num;
     private Branch [] branches;
@@ -18,8 +22,8 @@ public class Branch {
 
     //при помощи этого метода мы можем задать количество фруктов при создании объекта или рандомить
     public int addFruit() {
-        System.out.print("Сколько фруктов на этой ветке? (Введи число фруктов и нажмите ввод, ");
-        System.out.println("ввод иных значений задаст случайное количество фруктов. ");
+        log.info("Сколько фруктов на этой ветке? (Введи число фруктов и нажмите ввод, " +
+                "ввод иных значений задаст случайное количество фруктов. ");
 
         Scanner sc = Utill.scanPut();
         if (sc.hasNextInt()) {
@@ -32,7 +36,7 @@ public class Branch {
 
     //при помощи этого метода мы можем задать количество веток на создаваемом экземпляре-ветке, либо зарандомить
     public int setBranches() {
-        System.out.println("Сколько веток будет на нашей ветке? (Введи число и нажмите ввод, " +
+        log.info("Сколько веток будет на нашей ветке? (Введи число и нажмите ввод, " +
                 "ввод иных значений задаст случайное количество веток. ");
         Scanner sc = Utill.scanPut();
         if (sc.hasNextInt()) {
@@ -40,7 +44,7 @@ public class Branch {
         } else {
             num = (int) (Math.random() * 10);
         }
-        System.out.println("На ветке " + num + " веток");
+        log.info("На ветке " + num + " веток");
         return num;
     }
 

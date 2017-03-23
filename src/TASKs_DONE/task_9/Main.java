@@ -1,5 +1,9 @@
 package TASKs_DONE.task_9;
 
+import els3.logging_research.first.Someclass;
+
+import java.util.logging.Logger;
+
 import static TASKs_DONE.task_9.SportsmenUtils.totalMedals;
 
 /**
@@ -10,6 +14,8 @@ import static TASKs_DONE.task_9.SportsmenUtils.totalMedals;
 
  */
 public class Main {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
+
     public static void main(String[] args) {
 
         //array of sportsmen

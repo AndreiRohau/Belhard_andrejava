@@ -6,7 +6,7 @@ public class Device {
     private String name;
     private String type;
     private int price;
-    private String status; //todo how to set by default "OFF"
+    private String status; // how to set by default "OFF"
 
     public Device(String name, int type, int price){
         this.name = name;
@@ -60,12 +60,5 @@ public class Device {
     public void off() {
         setStatus("OFF");
     }
-
-    /*
-    эта функция, после запуска, создает рандомное число, которое в последствии не изменяемо никак
-     */
-//    public void getSerial(){
-//
-//    }
 
 }

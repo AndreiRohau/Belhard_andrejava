@@ -1,5 +1,10 @@
 package TASKs_DONE.task_6;
 
+import els3.logging_research.first.Someclass;
+
+import java.util.Scanner;
+import java.util.logging.Logger;
+
 /**
  * snake
  *
@@ -9,9 +14,18 @@ package TASKs_DONE.task_6;
  * метод showStatic - статичный, значит память выделена для него,
  */
 public class Main {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
     public static void main(String[] args) {
 
-        Snake snake = new Snake(); //что это????
-        snake.outWrite(snake.snake(5)); //немонятно что кого!!!!!!!!!!!!!!!
+        log.info("Input a number: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        //create object
+        Snake snake = new Snake();
+        //getting an array that is to be displayed
+        int[][] arr = snake.snake(num);
+        //out write this array
+        snake.outWrite(arr);
     }
 }

@@ -1,9 +1,14 @@
 package TASKs_DONE.task_10;
 
+import els3.logging_research.first.Someclass;
+
+import java.util.logging.Logger;
+
 /**
  * Created by Admin on 22.02.2017.
  */
 public class Sportsman {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
 
     private int g;
     private int s;
@@ -45,7 +50,7 @@ public class Sportsman {
     //getter and setter ends here
 
     public void start () {
-        System.out.print("_activity_");
+        log.info("_activity_");
     }
 
 }

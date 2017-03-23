@@ -1,14 +1,19 @@
 package TASKs_DONE.task_6;
 
+import els3.logging_research.first.Someclass;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 /**
  * Это вариант змейки, когда одно последнее число не задается. в четных змейках есть нюанс. в этом случае он учитан
  * НО в нечетных в этом случае не дорисовываетс 1 символ
  *
- *Во классе снейк все дорисовывается, но в четных на ляпывает 1 лишний символ
+ *В классе снейк все дорисовывается, но в четных на ляпывает 1 лишний символ
  */
 public class SNK {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
+
     public static void main(String[] args) {
         //setting the number
         Scanner scanner = new Scanner(System.in);

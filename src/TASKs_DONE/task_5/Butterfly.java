@@ -1,15 +1,19 @@
 package TASKs_DONE.task_5;
 
+import els3.logging_research.first.Someclass;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 /**
  * Created by Admin on 16.12.2016.
  */
 public class Butterfly {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
 
     public static void butterfly(){
 
-        System.out.println("Input a number: ");
+        log.info("Input a number: ");
         Scanner scanner = new Scanner (System.in);
         int num = scanner.nextInt();
         int arr[][] = new int[num][num];

@@ -1,12 +1,15 @@
 package task_12;
 
+import els3.logging_research.first.Someclass;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 /**
  * Created by Admin on 02.03.2017.
  */
 public class Utill {
-
+    private static final Logger log = Logger.getLogger(Someclass.class.getName());
     public static Scanner scanPut() {
         Scanner sc = new Scanner(System.in);
         return sc;
@@ -22,6 +25,6 @@ public class Utill {
     */
 
     public static void message(String string){
-        System.out.println(string);
+        log.info(string);
     }
 }

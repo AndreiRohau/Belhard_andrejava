@@ -1,13 +1,18 @@
 package TASKs_DONE.task_4_linkedList;
 
+import els3.logging_research.first.Someclass;
+
 import java.util.LinkedList;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class DateUtils {
+    private static Logger log = Logger.getLogger(Someclass.class.getName());
+
     public static void dateUtills() {
 
         //Вводим число
-        System.out.println("Enter a number ");
+        log.info("Enter a number ");
         Scanner sc = new Scanner(System.in);
         long number = sc.nextLong(); // вводим необходимые переменные
         long tempNum;
