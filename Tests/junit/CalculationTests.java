@@ -1,5 +1,6 @@
 package junit;
 
+import els3.junit.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
 

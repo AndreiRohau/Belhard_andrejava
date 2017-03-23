@@ -26,14 +26,14 @@ public class Gcdlcm {
             System.out.println("LCM " + i1);
         }
 
-        if(i1 > i2){                                    //if first number is bigger than second one
+        if(i1 > i2){                                    //if first number is bigger than withLog4j one
             do{
                 count2 = count2 + i2;
                 test = count2%i1;
             }while(test != 0);
             System.out.println("LCM " + count2);
 
-        }else if(i2 > i1){                              //if second number bigger than the first one
+        }else if(i2 > i1){                              //if withLog4j number bigger than the first one
             do{
                 count1 = count1 + i1;
                 test = count1%i2;
@@ -53,7 +53,7 @@ public class Gcdlcm {
         }
 
 
-        if(i1 > i2){                                    //if first number is bigger than second one
+        if(i1 > i2){                                    //if first number is bigger than withLog4j one
             do{
                 count2 = count2 + i2;
                 test = count2%i1;
@@ -62,7 +62,7 @@ public class Gcdlcm {
             gcd = mult/count2;
             System.out.println("GCD is " + gcd);
 
-        }else if(i2 > i1){                              //if second number bigger than the first one
+        }else if(i2 > i1){                              //if withLog4j number bigger than the first one
             do{
                 count1 = count1 + i1;
                 test = count1%i2;
