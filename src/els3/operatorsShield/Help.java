@@ -45,7 +45,7 @@ public class Help {
                     break;
                 case '3':
                     System.out.println("Oпepaтop for:\n");
-                    System.out.print("for(init; условие; итерация}");
+                    System.out.print("for(menu; условие; итерация}");
                     System.out.println(" оператор;");
                     break;
                 case '4':

@@ -6,4 +6,7 @@ package task15;
  * сделать комментарии для чего они нужны
  */
 public class Main {
+    public static void main(String[] args) {
+
+    }
 }

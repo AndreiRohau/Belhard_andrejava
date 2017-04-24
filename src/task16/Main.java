@@ -1,5 +1,7 @@
 package task16;
 
+import java.util.logging.Logger;
+
 /**
  * сделать класс-утилиту со
  * статическими переменными и методами, являющийся русско-английским словарем,
@@ -10,4 +12,14 @@ package task16;
 
  */
 public class Main {
+    private static final Logger log = Logger.getLogger(Main.class.getName());
+
+    public static void main(String[] args) {
+        Util u = new Util();
+        Util.menu(u);
+
+    }
+
+
+
 }
