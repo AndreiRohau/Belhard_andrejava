@@ -24,7 +24,7 @@ public class Mountain {
         this.complexity = complexity;
     }
 
-    public Mountain() {
+    public Mountain(int height, int complexity) {
         this.height = height;
         this.complexity = complexity;
     }
