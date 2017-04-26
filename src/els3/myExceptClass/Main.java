@@ -1,4 +1,4 @@
-package task19;
+package els3.myExceptClass;
 
 /**
  * Created by rohau.andrei on 26.04.2017.
