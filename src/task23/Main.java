@@ -1,12 +1,15 @@
 package task23;
 
 import java.util.LinkedList;
+import java.util.logging.Logger;
 
 /**
  * создать LinkedList, заполнить его и используя for each цикл, удалить один из элементов
  */
 
 public class Main {
+    private static final Logger log = Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) {
         //количество букв
         int num = 5;
