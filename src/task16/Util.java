@@ -71,7 +71,7 @@ public class Util {
     }
 
     public static void menu(Util u) {
-        log.info("\n Выбери язык перевода (введите цифру 1 или 2): " +
+        log.info("\n Выбери действие (введите цифру 1, 2 или 3): " +
                 "\n 1. Русский - Английский - Русский. " +
                 "\n 2. Добавить слово и перевод. " +
                 "\n 3. Выйти из программы.");
@@ -80,14 +80,13 @@ public class Util {
         if (sc.hasNextInt()){
             num = sc.nextInt();
         }else {
-            log.info("ОШИБКА! Попробуйте ввести номер нужного пункта из списка!\n");
             num = 0;
         }
         switch(num) {
             case 1:
 
                 String n = u.getterDict();
-                System.out.println(n);
+                log.info(n);
                 menu(u);
                 break;
 
@@ -102,6 +101,7 @@ public class Util {
                 break;
 
             default:
+                log.info("ОШИБКА! Попробуйте ввести номер нужного пункта из списка!\n");
                 menu(u);
         }
     }
