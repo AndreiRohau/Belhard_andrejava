@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class Util {
     private static final Logger log = Logger.getLogger(Util.class.getName());
 
-    private static Map dict = new HashMap<String, String>();
+    private Map dict = new HashMap<String, String>();
 
     public Util() {
                                     //Map dict = new HashMap< String, String>();
