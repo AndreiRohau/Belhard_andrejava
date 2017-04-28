@@ -1,4 +1,4 @@
-package task21.w3;
+package els3.easyLogger;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;
