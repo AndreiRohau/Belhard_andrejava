@@ -20,7 +20,7 @@ public class Main {
         try {
             FileHandler fh;
             // This block configure the log with handler and formatter
-            fh = new FileHandler("d:\\git\\Belhard_andrejava\\myLogs\\MyLogFile.log", true);
+            fh = new FileHandler("d:\\git\\Belhard_andrejava_Logs\\LogFile4task21.log", true);
             log.addHandler(fh);
             log.setLevel(Level.ALL);
             SimpleFormatter formatter = new SimpleFormatter();
