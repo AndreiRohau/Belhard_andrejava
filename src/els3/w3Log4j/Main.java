@@ -1,14 +1,12 @@
-package task21.w3.log4j;
+package els3.w3Log4j;
 
 /**
  * Created by rohau.andrei on 28.04.2017.
  */
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Enumeration;
-import java.util.Properties;
+
 import org.apache.log4j.*;
 /**
  *

@@ -1,4 +1,4 @@
-package task21.log4j.trial;
+package els3.log4jTrial;
 
 /**
  * Created by rohau.andrei on 26.04.2017.

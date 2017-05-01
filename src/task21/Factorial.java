@@ -1,4 +1,4 @@
-package task21.logging.logger.trial;
+package task21;
 
 /**
  * Created by rohau.andrei on 26.04.2017.
