@@ -5,7 +5,7 @@ package els3.myExceptClass;
  */
 class Factorial{
 
-    public static int getFactorial(int num) throws FactorialException{
+    public static int getFactorial(int num) throws FactorialException {
 
         int result=1;
         if(num<1) throw new FactorialException("Число не может быть меньше 1", num);
