@@ -1,8 +1,6 @@
 package els3.serializableTest;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 /**
  * Created by rohau.andrei on 23.05.2017.
@@ -27,24 +25,24 @@ public class Main {
 
         out.close();
 
-//        FileInputStream fin;
-//        ObjectInputStream oinp = null;
-//        Counter cntr2 = null;
-//        try {
-//            fin = new FileInputStream(stringForFile);
-//            oinp = new ObjectInputStream(fin);
-//            cntr2 = (Counter)oinp.readObject();
-//
-//        } catch(IOException ex){
-//            ex.printStackTrace();
-//        }
-//        catch (ClassNotFoundException ex){
-//            ex.printStackTrace();
-//        }
-//
-//        System.out.println(cntr2.toString());
-//
-//        oinp.close();
+        FileInputStream fin;
+        ObjectInputStream oinp = null;
+        Counter cntr2 = null;
+        try {
+            fin = new FileInputStream(stringForFile);
+            oinp = new ObjectInputStream(fin);
+            cntr2 = (Counter)oinp.readObject();
+
+        } catch(IOException ex){
+            ex.printStackTrace();
+        }
+        catch (ClassNotFoundException ex){
+            ex.printStackTrace();
+        }
+
+        System.out.println(cntr2.toString());
+
+        oinp.close();
 
     }
 }

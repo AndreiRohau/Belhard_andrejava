@@ -8,12 +8,12 @@ import java.io.*;
 public class Counter implements Serializable, Runnable{
     private int value;
     private String name;
-    transient private Thread myThread;
+//    transient private Thread myThread;
 
     public Counter(int value, String name){
         this.value = value;
         this.name = name;
-        startTheThread();
+//        startTheThread();
     }
 
     @Override
@@ -34,21 +34,21 @@ public class Counter implements Serializable, Runnable{
         }
     }
 
-    public void startTheThread(){
-        myThread = new Thread(this);
-        myThread.start();
-    }
+//    public void startTheThread(){
+//        myThread = new Thread(this);
+//        myThread.start();
+//    }
 
-    private void writeObject(ObjectOutputStream out) throws IOException {
+//    private void writeObject(ObjectOutputStream out) throws IOException {
 //        out.defaultWriteObject();
-
-        throw new NotSerializableException("dont want to write");
-    }
-    private void readObject(ObjectInputStream inp) throws IOException, ClassNotFoundException {
+//
+////        throw new NotSerializableException("dont want to write");
+//    }
+//    private void readObject(ObjectInputStream inp) throws IOException, ClassNotFoundException {
 //        inp.defaultReadObject();
 //        startTheThread();
-
-        throw new NotSerializableException("dont want to read");
-    }
+//
+////        throw new NotSerializableException("dont want to read");
+//    }
 
 }
